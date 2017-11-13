@@ -1,0 +1,32 @@
+.site-header{
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  border: $solid_border;
+  padding: .5rem 0;
+  position: fixed;
+ 
+  width: 100%;
+  z-index: 3;
+  height:50px;
+  background-color: hsla(0,0%,100%,.85)
+  
+
+}
+
+.main-navigation{
+  display:flex;
+  justify-content:flex-end;
+  
+}
+
+
+.attachment-large, .size-large,.wp-post-image{
+  position:relative;
+}
+
+.menu-item a{
+  padding:20px;
+  font-family:$accent;
+  color:$green;
+}
