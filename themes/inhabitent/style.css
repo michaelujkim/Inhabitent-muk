@@ -764,3 +764,9 @@ table {
   font-family: Novecento Sans Web, sans-serif;
   font-weight: bold;
   font-size: 30px; }
+
+.site-footer {
+  background: url(/images/dark-wood.png);
+  background-size: 512px 512px;
+  color: #fff;
+  height: 355px; }
