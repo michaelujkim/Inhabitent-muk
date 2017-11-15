@@ -610,11 +610,161 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
-  padding-top: 50px; }
+  width: 75%;
+  padding-top: 50px;
+  margin-left: auto;
+  margin-right: auto; }
 
 .content-area {
   width: 78%; }
+
+.entry-header {
+  position: relative;
+  width: 100%; }
+
+.single-post h1.entry-title {
+  position: absolute;
+  top: 0;
+  background-color: #248A83;
+  margin-top: 2rem;
+  font-size: 2.0rem;
+  max-width: 75%;
+  color: white; }
+
+.single-post .comments-link a {
+  text-decoration: none;
+  color: white;
+  padding-left: 1rem; }
+
+.single-post .entry-footer .cat-links {
+  padding-right: 1rem; }
+
+.single-post .entry-footer a {
+  text-decoration: none;
+  color: #248A83; }
+
+h2.entry-title {
+  position: absolute;
+  top: 0;
+  background-color: #248A83;
+  margin-top: 2rem;
+  font-size: 2.0rem;
+  max-width: 75%;
+  font-family: Novecento Sans Web, sans-serif; }
+  h2.entry-title a {
+    color: #fff;
+    text-decoration: none; }
+
+.entry-meta {
+  position: absolute;
+  right: 25.3%;
+  bottom: 0.6%;
+  background-color: #248A83;
+  color: white;
+  font-family: Novecento Sans Web, sans-serif; }
+
+.hentry {
+  margin: 0 0 1.5rem; }
+
+.updated:not(.published) {
+  display: none; }
+
+.single .byline,
+.group-blog .byline {
+  display: inline; }
+
+.page-content,
+.entry-content,
+.entry-summary {
+  margin: 1.5rem 0 0; }
+
+.page-links {
+  clear: both;
+  margin: 0 0 1.5rem; }
+
+/* Asides */
+.blog .format-aside .entry-title,
+.archive .format-aside .entry-title {
+  display: none; }
+
+/* Comments */
+.comment-content a {
+  word-wrap: break-word; }
+
+.bypostauthor {
+  display: block; }
+
+.post-14 {
+  padding-top: 5%; }
+
+.site-footer {
+  background: url("../../images/dark-wood.png"); }
+
+.footer-info-des {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 300px;
+  width: 100%;
+  background-size: cover;
+  padding-top: 2.5rem; }
+
+.footer-text {
+  color: #d99054; }
+
+.footer-text p {
+  color: white; }
+
+.footer-text a {
+  color: white;
+  text-decoration: none; }
+
+.text-logo a img {
+  width: 250px; }
+
+.social-media-icons {
+  font-size: 1.5rem; }
+
+.copyright {
+  text-align: center;
+  padding-bottom: 1.5rem;
+  color: white; }
+
+.page-id-5 div#content.site-content {
+  margin-left: 0;
+  margin-right: 0; }
+  .page-id-5 div#content.site-content div#primary.content-area {
+    width: 100%;
+    padding-right: 0; }
+  .page-id-5 div#content.site-content div#secondary.widget-area {
+    display: none; }
+
+#post-5 {
+  width: 100vw; }
+  #post-5 .entry-content {
+    width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 1rem; }
+  #post-5 .entry-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("../../images/about-hero.jpg");
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url("../../images/about-hero.jpg");
+    background-size: cover,cover;
+    height: 100vh;
+    text-align: center;
+    width: 100vw; }
+    #post-5 .entry-header .entry-title {
+      font-size: 3rem;
+      -ms-flex-item-align: center;
+          align-self: center;
+      margin-left: auto;
+      margin-right: auto;
+      color: white; }
 
 /*--------------------------------------------------------------
 # Media
@@ -684,11 +834,6 @@ object {
   background-color: #248A83;
   color: white;
   position: relative; }
-
-.entry-meta {
-  position: relative;
-  background-color: #248A83;
-  color: white; }
 
 .comments-link a {
   color: white;
@@ -770,3 +915,41 @@ table {
   background-size: 512px 512px;
   color: #fff;
   height: 355px; }
+
+.footer-info-des {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 300px;
+  width: 100%;
+  background-size: cover;
+  padding-top: 2.5rem; }
+
+.footer-text {
+  color: #d99054;
+  font-family: Novecento Sans Web, sans-serif; }
+
+.footer-text p {
+  color: white; }
+
+.footer-text a {
+  color: white;
+  text-decoration: none; }
+
+.text-logo a img {
+  width: 250px; }
+
+.social-media-icons {
+  font-size: 1.5rem; }
+
+.copyright {
+  text-align: center;
+  padding-bottom: 1.5rem;
+  color: white; }
+
+.home-hero {
+  background: url(../../images/home-hero.jpg);
+  height: 517px;
+  width: 100%; }

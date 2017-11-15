@@ -4,3 +4,36 @@
   color: #fff;
   height:355px;
 }
+
+.footer-info-des{
+display:flex;
+	justify-content: space-around;
+	height:300px;
+	width:100%;
+	background-size:cover;
+	padding-top:2.5rem;
+}
+.footer-text{
+  color:$orange;
+  font-family:$accent;
+}
+.footer-text p{
+	color:white;
+}
+.footer-text a{
+	color:white;
+	text-decoration: none;
+}
+.text-logo a{
+	img{
+	width:250px;
+	}
+}
+.social-media-icons{
+	font-size:1.5rem;
+}
+.copyright{
+text-align: center;
+padding-bottom:1.5rem;
+color:white;
+}
