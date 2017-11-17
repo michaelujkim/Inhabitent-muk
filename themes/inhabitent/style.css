@@ -755,16 +755,27 @@ h2.entry-title {
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("../../images/about-hero.jpg");
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url("../../images/about-hero.jpg");
     background-size: cover,cover;
-    height: 100vh;
+    height: 50vh;
     text-align: center;
     width: 100vw; }
     #post-5 .entry-header .entry-title {
+      position: absolute;
+      top: 50vw;
+      left: 50vw;
       font-size: 3rem;
       -ms-flex-item-align: center;
           align-self: center;
       margin-left: auto;
       margin-right: auto;
       color: white; }
+
+.home-journal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+h2 {
+  letter-spacing: 2px; }
 
 /*--------------------------------------------------------------
 # Media
@@ -854,7 +865,9 @@ object {
   width: 100%;
   z-index: 3;
   height: 50px;
-  background-color: rgba(255, 255, 255, 0.85); }
+  background-color: rgba(255, 255, 255, 0.85);
+  padding-left: 12.5%;
+  padding-right: 12.5%; }
 
 .main-navigation {
   display: -webkit-box;
@@ -862,7 +875,11 @@ object {
   display: flex;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
-          justify-content: flex-end; }
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase; }
 
 .attachment-large, .size-large, .wp-post-image {
   position: relative; }
@@ -871,6 +888,12 @@ object {
   padding: 20px;
   font-family: Novecento Sans Web, sans-serif;
   color: #248A83; }
+
+.site-description {
+  height: 100%; }
+
+.header-logo {
+  height: 50px; }
 
 a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
   margin: 0;
@@ -944,12 +967,210 @@ table {
 .social-media-icons {
   font-size: 1.5rem; }
 
-.copyright {
+.footer-copyright {
   text-align: center;
   padding-bottom: 1.5rem;
-  color: white; }
+  color: white;
+  font-family: Novecento Sans Web, sans-serif;
+  text-transform: uppercase; }
+
+.fa {
+  padding: 10px; }
 
 .home-hero {
   background: url(../../images/home-hero.jpg);
-  height: 517px;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.home-journal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  max-width: 70%;
+  margin-right: auto;
+  margin-left: auto; }
+
+.journal-entry-home {
+  border: 1px solid #e1e1e1;
+  max-width: 23%; }
+
+.home-journal-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: Novecento Sans Web, sans-serif;
+  font-size: 2.4rem;
+  font-weight: 400;
+  height: 10vw;
+  text-transform: uppercase; }
+
+.product-type-blocks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.read-more-button-home {
+  background-color: transparent;
+  border: 1px solid #000;
+  color: #000;
+  text-decoration: none;
+  font-family: Novecento Sans Web, sans-serif;
+  padding: 10px;
+  text-transform: uppercase; }
+
+.journal-entry-meta-home {
+  font-family: Merriweather Web, serif; }
+
+.journal-entry-title-home {
+  font-family: Novecento Sans Web, sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #248A83;
+  text-decoration: none;
+  font-weight: bold; }
+
+.home-shop-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: Novecento Sans Web, sans-serif;
+  font-size: 2.4rem;
+  font-weight: 400;
+  height: 10vw;
+  text-transform: uppercase; }
+
+.home .product-type-blocks img {
+  height: 70px;
+  width: 70px; }
+
+.product-type-blocks {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  border: 1px solid #e1e1e1;
+  border-top-width: 5px; }
+
+.page-template-about .entry-title {
+  background: transparent;
+  position: relative;
+  top: 50vh;
+  left: 25vw;
+  text-transform: uppercase;
+  font-family: Novecento Sans Web, sans-serif;
+  font-size: 27px;
+  letter-spacing: 2px; }
+
+.page-template-about .container {
+  width: 60vw;
+  margin-left: 20vw;
+  margin-right: 20vw; }
+
+.page-template-about .entry-header {
+  height: 100vh; }
+
+.page-template-about .custom-hero {
+  width: 100vw;
+  height: 50vh; }
+
+.page-template-about .entry-content h2 {
+  font-family: Novecento Sans Web, sans-serif;
+  font-size: 25px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 15px;
+  font-weight: bold; }
+
+.page-template-about .entry-content p {
+  font-family: Merriweather Web, serif;
+  line-height: 2;
+  padding: 5px; }
+
+.page-id-25 .entry-title {
+  text-transform: uppercase;
+  font-family: Novecento Sans Web, sans-serif;
+  font-size: 27px;
+  letter-spacing: 2px;
+  background: transparent;
+  color: black; }
+
+.search-form {
+  position: relative;
+  min-width: 50px;
+  width: 0%;
+  height: 50px;
+  float: right;
+  overflow: hidden;
+  -webkit-transition: width 0.3s;
+  transition: width 0.3s; }
+
+.search-field {
+  top: 0;
+  right: 0;
+  border: 0;
+  outline: 0;
+  background: #dcddd8;
+  width: 100%;
+  height: 50px;
+  margin: 0;
+  padding: 0px 55px 0px 20px;
+  font-size: 20px;
+  color: red; }
+
+.icon-search,
+.search-submit {
+  width: 50px;
+  height: 50px;
+  display: block;
+  position: absolute;
+  top: 0;
+  font-family: verdana;
+  font-size: 22px;
+  right: 0;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: 0;
+  line-height: 50px;
+  text-align: center;
+  cursor: pointer;
+  color: #248A83;
+  background: transparent; }
+
+.search-form-open {
   width: 100%; }
+
+.search-results .page-title {
+  text-transform: uppercase;
+  font-family: Novecento Sans Web, sans-serif;
+  font-size: 27px;
+  letter-spacing: 2px;
+  border-bottom: 1px solid #e1e1e1; }

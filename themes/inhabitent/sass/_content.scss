@@ -219,16 +219,30 @@ color:white;
 			background:linear-gradient( to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100% ),
 			url("../../images/about-hero.jpg");
 			background-size:cover,cover;
-			height:100vh;
+			height:50vh;
 			text-align: center;
 			width:100vw;
 			.entry-title{
+					position:absolute;
+					top: 50vw;
+					left: 50vw;
 					font-size:3rem;
 					align-self: center;
 					margin-left: auto;
 					margin-right:auto;
 					color:white;
+
 					
 			}
 	}
+}
+
+.home-journal{
+  display:flex
+}
+
+
+
+h2{
+	letter-spacing: 2px;
 }

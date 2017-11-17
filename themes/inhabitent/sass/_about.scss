@@ -1,0 +1,56 @@
+
+
+.page-template-about{
+
+ .entry-title{
+  background:transparent;
+  position:relative;
+  top:50vh;
+  left:25vw;
+  text-transform:uppercase;
+  font-family:$accent;
+  font-size: 27px;
+  letter-spacing: 2px;
+  
+  
+}
+
+.container{
+  width:60vw;
+  margin-left:20vw;
+  margin-right:20vw;
+}
+.entry-header{
+  height:100vh;
+}
+
+.custom-hero{
+  width:100vw;
+  height:50vh;
+}
+
+.entry-content h2{
+  font-family:$accent;
+  font-size:25px;
+  text-transform:uppercase;
+  text-align:center;
+  padding:15px;
+  font-weight:bold;
+
+}
+.entry-content p{
+  font-family:$main;
+  line-height:2;
+  padding:5px;
+
+}
+
+
+
+.entry-content{
+  // display:flex;
+  // justify-content:center;
+
+
+}
+}

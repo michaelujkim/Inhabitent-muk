@@ -9,7 +9,9 @@
   width: 100%;
   z-index: 3;
   height:50px;
-  background-color: hsla(0,0%,100%,.85)
+  background-color: hsla(0,0%,100%,.85);
+  padding-left:12.5%;
+  padding-right:12.5%;
   
 
 }
@@ -17,6 +19,8 @@
 .main-navigation{
   display:flex;
   justify-content:flex-end;
+  align-items: center;
+  text-transform:uppercase;
   
 }
 
@@ -29,4 +33,13 @@
   padding:20px;
   font-family:$accent;
   color:$green;
+}
+
+.site-description{
+  
+  height:100%;
+
+}
+.header-logo{
+  height:50px;
 }

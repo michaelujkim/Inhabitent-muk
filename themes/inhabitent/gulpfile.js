@@ -45,7 +45,7 @@ gulp.task('browser-sync', function () {
         './build/css/*.css',
         './build/js/*.js',
         './*.php',
-        './**/*.php',
+        './**/*.php'
     ];
 
     browserSync.init(files, {

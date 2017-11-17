@@ -85,8 +85,10 @@ add_filter( 'stylesheet_uri', 'inhabitent_minified_css', 10, 2 );
 function inhabitent_scripts() {
 	wp_enqueue_style( 'inhabitent-style', get_stylesheet_uri() );
 	wp_enqueue_style( 'tent-style', get_stylesheet_uri() );
+	wp_enqueue_script('jQuery');
 
 	wp_enqueue_script( 'inhabitent-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20130115', true );
+	wp_enqueue_script( 'search-bar-toggle', get_template_directory_uri() . '/build/js/search-bar-toggle.js', array('jQuery'), NULL, true );
 	wp_enqueue_script('font-awesome-cdn','https://use.fontawesome.com/133822153e.js',array(),'4.7',true);
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
@@ -110,6 +112,19 @@ function inhabitent_remove_submenus() {
 	remove_submenu_page( 'plugins.php', 'plugin-editor.php' );
 }
 add_action( 'admin_menu', 'inhabitent_remove_submenus', 110 );
+
+
+/**
+ * Add search box to primary menu
+ */
+function wpgood_nav_search($items, $args) {
+	// If this isn't the primary menu, do nothing
+	if( !($args->theme_location == 'primary') ) 
+	return $items;
+	// Otherwise, add search form
+	return $items . '<li>' . get_search_form(false) . '</li>';
+}
+add_filter('wp_nav_menu_items', 'wpgood_nav_search', 10, 2);
 
 
 

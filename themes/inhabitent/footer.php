@@ -12,10 +12,10 @@
 			<footer id="colophon" class="site-footer" role="contentinfo">
 				<div class="site-info footer-info-des" >
 				<div>
-						<h1 class="footer-text">Contact Us</h1>
-						<p>Email</p>
-						<p>telephon</p>
-						<a class="social-media-icons">socialmedia</a>
+						<h1 class="footer-text">Contact Us<p><i class="fa fa-envelope" aria-hidden="true"></i><a href="mailto:info@inhabitent.com">info@inhabitent.com</a></p>
+						<p><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:5553434567891">778-456-7891</a></p>
+						<p class="social-media-icons"><i class="fa fa-facebook" aria-hidden="true"></i><i class="fa fa-twitter" aria-hidden="true"></i><i class="fa fa-google-plus" aria-hidden="true"></i></p></h1>
+						
 				</div>
 				<div>
 					<h1  class="footer-text">Business Hours</h1>
@@ -25,8 +25,16 @@
 
 
 				</div>
-					<a href="<?php echo esc_url( 'https://wordpress.org/' ); ?>"><?php printf( esc_html( 'Proudly powered by %s' ), 'WordPress' ); ?></a>
-				</div><!-- .site-info -->
+				<div class="text-logo">
+				<img src="<?php echo get_template_directory_uri() . '/images/inhabitent-logo-text.svg'?>" class="footer-text-logo">
+				</div>	
+					
+				</div>
+				<div class="footer-copyright">
+					<h2>copyright © 2016 inhabitent</h2>
+</div>
+
+					<!-- .site-info -->
 			</footer><!-- #colophon -->
 		</div><!-- #page -->
 

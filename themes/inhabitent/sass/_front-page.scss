@@ -1,5 +1,97 @@
 .home-hero{
   background: url(../../images/home-hero.jpg);
-  height:517px;
+  background-size: cover;
+  
+  height:100vh;
   width:100%;
+  display:flex;
+  justify-content:center;
+  align-items: center;
+
+}
+
+.home-journal{
+  display:flex;
+  justify-content:space-around;
+  max-width:70%;
+  margin-right:auto;
+  margin-left:auto;
+}
+.site-main{
+
+}
+
+.journal-entry-home{
+  border:$solid_border;
+  max-width:23%;
+}
+
+.home-journal-header{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  font-family: $accent;
+  font-size: 2.4rem;
+  font-weight:400;
+  height:10vw;
+  text-transform: uppercase;
+  
+}
+
+.product-type-blocks{
+  display: flex;
+}
+
+.read-more-button-home{
+  
+  background-color: transparent;
+  border: 1px solid #000;
+  color: #000;
+  text-decoration:none;
+  font-family:$accent;
+  padding:10px;
+  text-transform:uppercase;
+
+
+}
+
+.journal-entry-meta-home{
+  font-family: $main;
+
+}
+.journal-entry-title-home{
+  font-family: $accent;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: $green;
+  text-decoration: none;
+  font-weight: bold;
+
+}
+
+.home-shop-header{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  font-family: $accent;
+  font-size: 2.4rem;
+  font-weight:400;
+  height:10vw;
+  text-transform: uppercase;
+
+}
+
+.home .product-type-blocks img {
+  height: 70px;
+  width: 70px;
+}
+
+.product-type-blocks{
+  width:70%;
+  margin-left:auto;
+  margin-right:auto;
+  display:flex;
+  justify-content: space-around;
+  border: 1px solid #e1e1e1;
+  border-top-width: 5px;
 }
