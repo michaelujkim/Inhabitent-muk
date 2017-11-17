@@ -356,8 +356,6 @@ input[type="submit"] {
   border-color: #ccc #ccc #bbb;
   border-radius: 3px;
   background: #e6e6e6;
-  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
-          box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
   color: rgba(0, 0, 0, 0.8);
   font-size: 12px;
   font-size: 0.75rem;
@@ -643,7 +641,7 @@ a {
   text-decoration: none;
   color: #248A83; }
 
-h2.entry-title {
+.single-post h2.entry-title {
   position: absolute;
   top: 0;
   background-color: #248A83;
@@ -651,7 +649,19 @@ h2.entry-title {
   font-size: 2.0rem;
   max-width: 75%;
   font-family: Novecento Sans Web, sans-serif; }
-  h2.entry-title a {
+  .single-post h2.entry-title a {
+    color: #fff;
+    text-decoration: none; }
+
+.blog h2.entry-title {
+  position: absolute;
+  top: 0;
+  background-color: #248A83;
+  margin-top: 2rem;
+  font-size: 2.0rem;
+  max-width: 75%;
+  font-family: Novecento Sans Web, sans-serif; }
+  .blog h2.entry-title a {
     color: #fff;
     text-decoration: none; }
 
@@ -841,11 +851,6 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
-.entry-title {
-  background-color: #248A83;
-  color: white;
-  position: relative; }
-
 .comments-link a {
   color: white;
   text-decoration: none; }
@@ -1122,51 +1127,101 @@ table {
   background: transparent;
   color: black; }
 
+.page-id-25 .entry-content h2 {
+  font-family: Novecento Sans Web, sans-serif;
+  margin-top: 2rem;
+  font-size: 1.7rem;
+  font-weight: bold;
+  text-transform: uppercase; }
+
+.search-field {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: none;
+  outline: none;
+  background: #fff;
+  width: 100%;
+  height: 60px;
+  margin: 0;
+  z-index: 10;
+  padding: 20px 65px 20px 20px;
+  font-family: inherit;
+  font-size: 20px;
+  color: #2c3e50; }
+
+input[type="search"].search-field {
+  -webkit-appearance: none;
+  -webkit-border-radius: 0px; }
+
 .search-form {
   position: relative;
-  min-width: 50px;
+  margin-top: 10px;
   width: 0%;
-  height: 50px;
+  min-width: 60px;
+  height: 60px;
   float: right;
   overflow: hidden;
   -webkit-transition: width 0.3s;
-  transition: width 0.3s; }
-
-.search-field {
-  top: 0;
-  right: 0;
-  border: 0;
-  outline: 0;
-  background: #dcddd8;
-  width: 100%;
-  height: 50px;
-  margin: 0;
-  padding: 0px 55px 0px 20px;
-  font-size: 20px;
-  color: red; }
+  transition: width 0.3s;
+  -webkit-backface-visibility: hidden; }
 
 .icon-search,
 .search-submit {
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
   display: block;
   position: absolute;
-  top: 0;
-  font-family: verdana;
-  font-size: 22px;
   right: 0;
+  top: 0;
   padding: 0;
   margin: 0;
-  border: 0;
-  outline: 0;
-  line-height: 50px;
+  line-height: 60px;
   text-align: center;
-  cursor: pointer;
-  color: #248A83;
-  background: transparent; }
+  cursor: pointer; }
 
-.search-form-open {
+.search-submit {
+  background: #fff;
+  /* IE needs this */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  /* IE 8 */
+  filter: alpha(opacity=0);
+  /* IE 5-7 */
+  opacity: 0;
+  color: transparent;
+  border: none;
+  outline: none;
+  z-index: -1; }
+
+.search-open,
+.no-js .search {
   width: 100%; }
+
+.icon-search {
+  color: #fff;
+  background: #e67e22;
+  z-index: 90;
+  font-size: 22px;
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased; }
+
+.icon-search:before {
+  content: "\e000"; }
+
+.search-open .icon-search,
+.no-js .search .icon-search {
+  background: #da6d0d;
+  color: #fff;
+  z-index: 11; }
+
+.search-open .search-submit,
+.no-js .search .search-submit {
+  z-index: 90; }
 
 .search-results .page-title {
   text-transform: uppercase;
@@ -1174,3 +1229,19 @@ table {
   font-size: 27px;
   letter-spacing: 2px;
   border-bottom: 1px solid #e1e1e1; }
+
+.search-results h2.entry-title {
+  position: relative;
+  top: 0;
+  text-decoration: none;
+  color: #248A83;
+  margin-top: 2rem;
+  font-size: 2.0rem;
+  max-width: 75%;
+  font-family: Novecento Sans Web, sans-serif; }
+  .search-results h2.entry-title a {
+    color: #248A83;
+    text-decoration: none; }
+
+.search-results .entry-meta {
+  display: none; }

@@ -1,39 +1,39 @@
-$(document).ready(function(){
-  var submitIcon = $('.icon-search');
-  var inputBox = $('.search-form');
-  var searchBox = $('.search-field');
-  var isOpen = false;
-  submitIcon.click(function(){
-      if(isOpen == false){
-          searchBox.addClass('.search-form-open');
-          inputBox.focus();
-          isOpen = true;
-      } else {
-          searchBox.removeClass('.search-form-open');
-          inputBox.focusout();
-          isOpen = false;
-      }
-  });  
-   submitIcon.mouseup(function(){
-          return false;
-      });
-  searchBox.mouseup(function(){
-          return false;
-      });
-  $(document).mouseup(function(){
-          if(isOpen == true){
-              $('.icon-search').css('display','block');
-              submitIcon.click();
+(function(){
+
+  ( function( window ) {
+    
+    function UISearch( el, options ) {	
+      this.el = el;
+      this.inputEl = el.querySelector( 'form > input.search-field' );
+      this._initEvents();
+    }
+  
+    UISearch.prototype = {
+      _initEvents : function() {
+        var self = this,
+          initSearchFn = function( ev ) {
+            if( !classie.has( self.el, 'search-open' ) ) { // open it
+              ev.preventDefault();
+              self.open();
+            }
+            else if( classie.has( self.el, 'search-open' ) && /^\s*$/.test( self.inputEl.value ) ) { // close it
+              self.close();
+            }
           }
-      });
-});
-  function buttonUp(){
-      var inputVal = $('.search-field').val();
-      inputVal = $.trim(inputVal).length;
-      if( inputVal !== 0){
-          $('.icon-search').css('display','none');
-      } else {
-          $('.search-form').val('');
-          $('.icon-search').css('display','block');
+  
+        this.el.addEventListener( 'click', initSearchFn );
+        this.inputEl.addEventListener( 'click', function( ev ) { ev.stopPropagation(); });
+      },
+      open : function() {
+        classie.add( this.el, 'search-open' );
+      },
+      close : function() {
+        classie.remove( this.el, 'search-open' );
       }
-  }
+    }
+  
+    // add to global namespace
+    window.UISearch = UISearch;
+  
+  } )( window );
+})(jQuery)

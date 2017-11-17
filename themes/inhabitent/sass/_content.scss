@@ -96,21 +96,39 @@
 			text-decoration: none;
 			color:$green;
 	}
+	h2.entry-title{
+		position: absolute;
+		top:0;
+		background-color: $green;
+		margin-top:2rem;
+		font-size:2.0rem;
+		max-width:75%;
+		font-family:$accent;
+		
+				a{
+						color:#fff;
+						text-decoration:none;
+				}
+	}
 }
-h2.entry-title{
-	position: absolute;
-	top:0;
-	background-color: $green;
-	margin-top:2rem;
-	font-size:2.0rem;
-	max-width:75%;
-	font-family:$accent;
-	
-			a{
-					color:#fff;
-					text-decoration:none;
-			}
+.blog{
+	h2.entry-title{
+		position: absolute;
+		top:0;
+		background-color: $green;
+		margin-top:2rem;
+		font-size:2.0rem;
+		max-width:75%;
+		font-family:$accent;
+		
+				a{
+						color:#fff;
+						text-decoration:none;
+				}
+	}
 }
+
+
 .entry-meta {
 	position: absolute;
 	right: 25.3%;
