@@ -794,7 +794,9 @@ h2 {
 .post-type-archive-product .site-main {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr; }
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+  border: 1px solid #e1e1e1; }
 
 .shop-header {
   display: -webkit-box;
@@ -811,6 +813,22 @@ h2 {
   font-weight: 400;
   height: 10vw;
   text-transform: uppercase; }
+
+.shop-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: Novecento Sans Web, sans-serif;
+  font-size: 2.4rem;
+  font-weight: 400;
+  height: 10vw;
+  text-transform: uppercase;
+  color: #d99054; }
 
 /*--------------------------------------------------------------
 # Media

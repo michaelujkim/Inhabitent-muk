@@ -9,6 +9,7 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
   <div class="shop-header"> <h1>Shop</h1></div>
+  <div class="shop-menu"><h2>Do</h2><h2>Eat</h2><h2>Sleep</h2><h2>Wear</h2></div>
   <main id="main" class="site-main" role="main">
       
     
