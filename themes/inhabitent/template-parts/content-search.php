@@ -20,5 +20,7 @@
 
 	<div class="entry-summary">
 		<?php the_excerpt(); ?>
-	</div><!-- .entry-summary -->
+	</div>
+	
+	<p><a href="<?php the_permalink(); ?>" class="read-more-button-home">read entry</a></p><!-- .entry-summary -->
 </article><!-- #post-## -->

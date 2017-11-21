@@ -1,0 +1,24 @@
+.single-product{
+
+  .entry-header{
+    display:flex;
+  }
+  .hentry{
+    display:flex;
+    width:100%;
+    
+  }
+  img{
+    max-width:640px;
+  }
+  .entry-content{
+    max-width:30%;
+  }
+  .entry-title{
+    color:$orange;
+    font-family:$accent;
+    letter-spacing:2px;
+    padding:20px;
+    font-size:25px;
+  }
+}

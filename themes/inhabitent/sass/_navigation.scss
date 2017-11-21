@@ -5,7 +5,8 @@
 /* Links */
 
 a {
-	color: $color__link;
+	color: $green;
+	text-decoration: none;
 
 	&:visited {
 		color: $color__link-visited;

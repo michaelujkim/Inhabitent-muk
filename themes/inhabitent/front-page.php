@@ -99,7 +99,21 @@
 <?php endforeach; wp_reset_postdata(); ?>
 </div>
 
+<div class="home-adventures-header">
+					<h2>Latest Adventures</h2>
+</div>
 
+<div class="home-adventures">
+	<div class="adventure-1"><h1>Getting Back to Nature in a Canoe</h1>
+							 </div>
+							 <div class="adventure-2">
+								 <h1>A Night with Friends at the Beach</h1>
+							 </div>
+							 <div class="adventure-3"><h1>Taking in the View at Big Mountain</h1></div>
+							 <div class="adventure-4"><h1>Star-gazing at the Night Sky</h1></div>
+
+							 </div>
+							 <h1> More Adventures</h1>
 
 
 		</main><!-- #main -->

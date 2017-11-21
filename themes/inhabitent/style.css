@@ -414,7 +414,8 @@ textarea {
 --------------------------------------------------------------*/
 /* Links */
 a {
-  color: royalblue; }
+  color: #248A83;
+  text-decoration: none; }
   a:visited {
     color: purple; }
   a:hover, a:focus, a:active {
@@ -787,6 +788,30 @@ a {
 h2 {
   letter-spacing: 2px; }
 
+.read-more-button {
+  padding: 2rem; }
+
+.post-type-archive-product .site-main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr; }
+
+.shop-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: Novecento Sans Web, sans-serif;
+  font-size: 2.4rem;
+  font-weight: 400;
+  height: 10vw;
+  text-transform: uppercase; }
+
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
@@ -938,6 +963,9 @@ table {
   font-weight: bold;
   font-size: 30px; }
 
+.text-widget {
+  color: #248A83; }
+
 .site-footer {
   background: url(../../images/dark-wood.png);
   background-size: 512px 512px;
@@ -1039,7 +1067,8 @@ table {
   text-decoration: none;
   font-family: Novecento Sans Web, sans-serif;
   padding: 10px;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  margin: 10px; }
 
 .journal-entry-meta-home {
   font-family: Merriweather Web, serif; }
@@ -1053,6 +1082,22 @@ table {
   font-weight: bold; }
 
 .home-shop-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: Novecento Sans Web, sans-serif;
+  font-size: 2.4rem;
+  font-weight: 400;
+  height: 10vw;
+  text-transform: uppercase; }
+
+.home-adventures-header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1084,6 +1129,49 @@ table {
   border: 1px solid #e1e1e1;
   border-top-width: 5px; }
 
+.home-adventures {
+  color: white;
+  font-size: 40px;
+  background: rgba(0, 0, 0, 0.35);
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr; }
+  .home-adventures .adventure-1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    background: url(../../images/canoe-girl.jpg);
+    height: 100%;
+    background-size: cover; }
+  .home-adventures .adventure-2 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    background: url(../../images/beach-bonfire.jpg);
+    height: 50vh;
+    background-size: cover; }
+  .home-adventures .adventure-3 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background: url(../../images/mountain-hikers.jpg);
+    height: 50vh;
+    background-size: cover; }
+  .home-adventures .adventure-4 {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background: url(../../images/night-sky.jpg);
+    height: 50vh;
+    background-size: cover; }
+
 .page-template-about .entry-title {
   background: transparent;
   position: relative;
@@ -1092,7 +1180,8 @@ table {
   text-transform: uppercase;
   font-family: Novecento Sans Web, sans-serif;
   font-size: 27px;
-  letter-spacing: 2px; }
+  letter-spacing: 2px;
+  color: white; }
 
 .page-template-about .container {
   width: 60vw;
@@ -1104,7 +1193,7 @@ table {
 
 .page-template-about .custom-hero {
   width: 100vw;
-  height: 50vh; }
+  height: 100vh; }
 
 .page-template-about .entry-content h2 {
   font-family: Novecento Sans Web, sans-serif;
@@ -1135,93 +1224,11 @@ table {
   text-transform: uppercase; }
 
 .search-field {
-  position: absolute;
-  top: 0;
-  right: 0;
-  border: none;
-  outline: none;
-  background: #fff;
-  width: 100%;
-  height: 60px;
-  margin: 0;
-  z-index: 10;
-  padding: 20px 65px 20px 20px;
-  font-family: inherit;
-  font-size: 20px;
-  color: #2c3e50; }
-
-input[type="search"].search-field {
-  -webkit-appearance: none;
-  -webkit-border-radius: 0px; }
-
-.search-form {
-  position: relative;
-  margin-top: 10px;
-  width: 0%;
-  min-width: 60px;
-  height: 60px;
-  float: right;
-  overflow: hidden;
-  -webkit-transition: width 0.3s;
-  transition: width 0.3s;
-  -webkit-backface-visibility: hidden; }
-
-.icon-search,
-.search-submit {
-  width: 60px;
-  height: 60px;
-  display: block;
-  position: absolute;
-  right: 0;
-  top: 0;
-  padding: 0;
-  margin: 0;
-  line-height: 60px;
-  text-align: center;
-  cursor: pointer; }
-
-.search-submit {
-  background: #fff;
-  /* IE needs this */
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-  /* IE 8 */
-  filter: alpha(opacity=0);
-  /* IE 5-7 */
-  opacity: 0;
-  color: transparent;
-  border: none;
-  outline: none;
-  z-index: -1; }
+  display: none; }
 
 .search-open,
 .no-js .search {
-  width: 100%; }
-
-.icon-search {
-  color: #fff;
-  background: #e67e22;
-  z-index: 90;
-  font-size: 22px;
-  font-family: 'icomoon';
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  -webkit-font-smoothing: antialiased; }
-
-.icon-search:before {
-  content: "\e000"; }
-
-.search-open .icon-search,
-.no-js .search .icon-search {
-  background: #da6d0d;
-  color: #fff;
-  z-index: 11; }
-
-.search-open .search-submit,
-.no-js .search .search-submit {
-  z-index: 90; }
+  display: block; }
 
 .search-results .page-title {
   text-transform: uppercase;
@@ -1245,3 +1252,27 @@ input[type="search"].search-field {
 
 .search-results .entry-meta {
   display: none; }
+
+.single-product .entry-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.single-product .hentry {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%; }
+
+.single-product img {
+  max-width: 640px; }
+
+.single-product .entry-content {
+  max-width: 30%; }
+
+.single-product .entry-title {
+  color: #d99054;
+  font-family: Novecento Sans Web, sans-serif;
+  letter-spacing: 2px;
+  padding: 20px;
+  font-size: 25px; }

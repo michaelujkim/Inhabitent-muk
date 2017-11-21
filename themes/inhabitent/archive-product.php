@@ -8,7 +8,9 @@
 get_header(); ?>
 
 	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+  <div class="shop-header"> <h1>Shop</h1></div>
+  <main id="main" class="site-main" role="main">
+      
     
 		<?php if ( have_posts() ) : ?>
 

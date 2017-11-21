@@ -264,3 +264,28 @@ color:white;
 h2{
 	letter-spacing: 2px;
 }
+
+.read-more-button{
+	padding:2rem;
+}
+
+
+.post-type-archive-product{
+	.site-main{
+		display:grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr 1fr;
+	}
+}
+
+.shop-header{
+	display:flex;
+  justify-content: center;
+  align-items: center;
+  font-family: $accent;
+  font-size: 2.4rem;
+  font-weight:400;
+  height:10vw;
+  text-transform: uppercase;
+
+}
