@@ -1,9 +1,16 @@
 .widget-title{
   font-family:$accent;
   font-weight: bold;
-  font-size: 30px;
+  font-size: 20px;
+  text-transform:uppercase;
 }
 
 .text-widget{
   color:$green;
+}
+
+.widget-area{
+	border-left:$solid_border;
+  width:auto;
+  padding:30px;
 }

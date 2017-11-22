@@ -48,10 +48,7 @@
 	display: block;
 }
 
-.widget-area{
-	border:$solid_border;
-	width:20%;
-}
+
 .site-content{
 	display:flex;
 	width:75%;
@@ -76,9 +73,10 @@
 			top:0;
 			background-color: $green;
 			margin-top:2rem;
+			color:white;
 			font-size:2.0rem;
 			max-width:75%;
-			color:white;
+			
 	}
 	.comments-link{
 			a{
@@ -152,6 +150,8 @@
 .entry-content,
 .entry-summary {
 	margin: $base__space-unit 0 0;
+	p{
+		font-family: Merriweather;}
 }
 .page-links {
 	clear: both;
@@ -303,4 +303,8 @@ h2{
 	text-transform: uppercase;
 	color:$orange;
 
+}
+
+p{
+	font-family:$main;
 }
