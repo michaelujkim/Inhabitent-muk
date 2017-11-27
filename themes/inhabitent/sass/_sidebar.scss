@@ -7,10 +7,12 @@
 
 .text-widget{
   color:$green;
+  font-family:$main;
 }
 
 .widget-area{
 	border-left:$solid_border;
-  width:auto;
+  width:30%;
   padding:30px;
+  font-family:$main;
 }

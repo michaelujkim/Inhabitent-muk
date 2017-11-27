@@ -1,0 +1,45 @@
+.post-type-archive-product{
+    .site-content{
+      width:100%;
+    }
+
+  .shop-menu{
+  color:$green;
+  font-size: 20px;
+  
+  width:50%;
+  margin-right:auto;
+  margin-left:auto;
+
+
+}
+.site-main{
+  padding-top:20px;
+  border-top:$dashed_border;
+}
+
+.content-area{
+  
+  width:100%;
+}
+
+.shop-entry-info{
+  display:flex;
+  justify-content: space-between;
+  font-family:$main;
+  align-content:center;
+  align-items: center;
+  padding:10px;
+  border:$solid_border;
+  border-top: 5px solid #e1e1e1;
+}
+.entry-header{
+  img{
+  height:300px;
+  width:350px;
+}
+
+}
+
+
+}

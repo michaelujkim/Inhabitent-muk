@@ -19,7 +19,10 @@
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
-  <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+	<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+	
+	 <?php
+echo CFS()->get( 'price' );?>
   <?php get_post_custom(3); ?>
 
 		<?php the_content(); ?>

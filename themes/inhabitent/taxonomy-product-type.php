@@ -21,8 +21,7 @@ get_header(); ?>
 				<?php the_title(); ?>
 
 			<?php endwhile; ?>
-
-		
+			
 
 		<?php else : ?>
 
@@ -33,5 +32,4 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>
