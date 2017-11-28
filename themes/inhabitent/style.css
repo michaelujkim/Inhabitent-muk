@@ -438,7 +438,7 @@ a {
   color: #248A83;
   text-decoration: none; }
   a:visited {
-    color: purple; }
+    color: #248A83; }
   a:hover, a:focus, a:active {
     color: midnightblue; }
   a:focus {
@@ -834,7 +834,7 @@ h2 {
   height: 10vw;
   text-transform: uppercase; }
 
-.shop-menu {
+.product-type-blocks-archive {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -847,7 +847,11 @@ h2 {
   font-size: 2.4rem;
   font-weight: 400;
   height: 10vw;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row; }
 
 p {
   font-family: Merriweather; }
@@ -1365,7 +1369,7 @@ table {
 .post-type-archive-product .site-content {
   width: 100%; }
 
-.post-type-archive-product .shop-menu {
+.post-type-archive-product .product-type-blocks-archive {
   color: #248A83;
   font-size: 20px;
   width: 50%;
@@ -1397,5 +1401,5 @@ table {
   border-top: 5px solid #e1e1e1; }
 
 .post-type-archive-product .entry-header img {
-  height: 300px;
-  width: 350px; }
+  max-height: 300px;
+  max-width: 350px; }

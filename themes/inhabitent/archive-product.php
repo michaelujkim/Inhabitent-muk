@@ -9,7 +9,31 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
   <div class="shop-header"> <h1>Shop</h1></div>
-  <div class="shop-menu"><h2>Do</h2><h2>Eat</h2><h2>Sleep</h2><h2>Wear</h2></div>
+  <div class="product-type-blocks-archive">
+	<?php
+               $terms = get_terms( array(
+                   'taxonomy' => 'product-type',
+                   'hide_empty' => 0,
+							 ) );
+							 
+							 
+               if ( ! empty( $terms ) && ! is_wp_error( $terms ) ) :
+            ?>
+               
+
+                  <?php foreach ( $terms as $term ) : ?>
+
+                     <div class="product-type-block-wrapper-archive">
+                       
+                        <p><a href="<?php echo get_term_link( $term ); ?>" class="btn"><?php echo $term->name; ?> Stuff</a></p>
+                     </div>
+
+                  <?php endforeach; ?>
+
+              
+               
+            <?php endif; ?>
+               </div>
   <main id="main" class="site-main" role="main">
       
     

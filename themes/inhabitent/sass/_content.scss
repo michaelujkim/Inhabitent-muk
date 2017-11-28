@@ -292,7 +292,7 @@ h2{
 
 }
 
-.shop-menu{
+.product-type-blocks-archive{
 	display:flex;
   justify-content: space-around;
   align-items: center;
@@ -301,6 +301,7 @@ h2{
   font-weight:400;
   height:10vw;
 	text-transform: uppercase;
+	flex-direction:row;
 	
 
 }

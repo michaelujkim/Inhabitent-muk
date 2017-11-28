@@ -71,3 +71,10 @@ function inhabitent_dynamic_css(){
 
 }
 add_action('wp_enqueue_scripts','inhabitent_dynamic_css');
+
+function inhabitent_fix_tax_query($query) {
+	if (!is_admin() && $query->is_main_query() && is_tax('product-type')) {
+		$query->set('post_type', 'product');
+	}
+}
+add_action('pre_get_posts', 'inhabitent_fix_tax_query');
