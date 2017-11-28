@@ -25,7 +25,7 @@ get_header(); ?>
 
                      <div class="product-type-block-wrapper-archive">
                        
-                        <p><a href="<?php echo get_term_link( $term ); ?>" class="btn"><?php echo $term->name; ?> Stuff</a></p>
+                        <p><a href="<?php echo get_term_link( $term ); ?>" class="btn"><?php echo $term->name; ?></a></p>
                      </div>
 
                   <?php endforeach; ?>

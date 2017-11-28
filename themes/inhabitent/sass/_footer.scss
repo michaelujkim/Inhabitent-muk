@@ -14,15 +14,45 @@ display:flex;
 	padding-top:2.5rem;
 }
 .footer-text{
+	
   color:$orange;
-  font-family:$accent;
+	font-family:$accent;
+	padding-left:9px;
+	text-transform:uppercase;
+	padding-bottom:10px;
+	
 }
-.footer-text p{
+
+.footer-text-business{
+	
+  color:$orange;
+	font-family:$accent;
+	
+	text-transform:uppercase;
+	padding-bottom:10px;
+	
+}
+
+.footer-text-business-hours{
+	
+  color:white;
+	font-family:$main;
+	
+	line-height:2;
+	span{
+		font-weight:bold;
+		font-family:$main;
+	}
+	
+}
+.footer-info-contact{
 	color:white;
+	font-family:$main;
 }
-.footer-text a{
+.footer-info-contact a{
 	color:white;
 	text-decoration: none;
+	font-family:$main;
 }
 .text-logo a{
 	img{
@@ -38,6 +68,7 @@ padding-bottom:1.5rem;
 color:white;
 font-family:$accent;
 text-transform:uppercase;
+
 
 }
 

@@ -32,14 +32,42 @@
   padding:10px;
   border:$solid_border;
   border-top: 5px solid #e1e1e1;
+  position:absolute;
+  top:100%;
 }
 .entry-header{
   img{
-  max-height:300px;
-  max-width:350px;
+    
+    width:300px;
+    left: 50%;
+    
+    
+    top: 50%;
+    -webkit-transform: translate(-50%,-52%);
+    transform: translate(-50%,-52%);
+    width: auto;
+    overflow:hidden;
 }
+.shop-entry-image-wrapper{
+  
+  height:199px;
+  overflow:hidden;
+  display:flex;
+  flex-direction:column;
+  align-content:space-between;
+
+  
 
 }
+
+
+}
+.entry-title::after{
+  border-bottom:1px dotted black;
+  
+}
+
+
 
 
 }

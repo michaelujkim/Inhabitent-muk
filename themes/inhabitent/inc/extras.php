@@ -78,3 +78,14 @@ function inhabitent_fix_tax_query($query) {
 	}
 }
 add_action('pre_get_posts', 'inhabitent_fix_tax_query');
+
+
+function inhabitent_change_archive_title($title){
+	if(is_tax('product-type')){
+		$title = single_term_title();
+	}
+
+	return $title;
+}
+
+add_filter('get_the_archive_title', 'inhabitent_change_archive_title');

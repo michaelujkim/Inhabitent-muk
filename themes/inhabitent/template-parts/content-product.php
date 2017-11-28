@@ -20,18 +20,26 @@
 
 	<div class="entry-content">
 	<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-	
+	<p class="single-price">
 	 <?php
 echo CFS()->get( 'price' );?>
   <?php get_post_custom(3); ?>
-
+</p>
 		<?php the_content(); ?>
+<div class="social-buttons">
+
+<button class="black-button"><i class="fa fa-facebook"></i>Like</button>
+<button class="black-button"><i class="fa fa-twitter"></i>Tweet</button>
+<button class="black-button"><i class="fa fa-pinterest"></i>Pin</button>
+</div>
+
 		<?php
 			wp_link_pages( array(
 				'before' => '<div class="page-links">' . esc_html( 'Pages:' ),
 				'after'  => '</div>',
 			) );
 		?>
+
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">

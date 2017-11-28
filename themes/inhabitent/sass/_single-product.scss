@@ -1,7 +1,18 @@
 .single-product{
-
+.site-content{
+  width:80%;
+}
+.content-area{
+  width:100%;
+}
   .entry-header{
     display:flex;
+    img{
+      max-width:640px;
+      width:30rem;
+      
+      
+    }
   }
   .hentry{
     display:flex;
@@ -10,15 +21,33 @@
   }
   img{
     max-width:640px;
+    width:30rem;
+    
   }
   .entry-content{
-    max-width:30%;
+    max-width:50%;
   }
   .entry-title{
     color:$orange;
     font-family:$accent;
-    letter-spacing:2px;
-    padding:20px;
-    font-size:25px;
+    
+    padding-right:20px;
+    padding-top:20px;
+    padding-bottom:20px;
+    font-size:28px;
+    text-transform:uppercase;
+    font-weight:bold;
+  }
+
+  .single-price{
+    font-family:$accent;
+    font-size:20px;
+    padding-bottom:20px;
+  }
+  .black-button{
+    border: 1px solid #000;
+    color: #000;
+    text-transform:uppercase;
+    font-family:$accent;
   }
 }
