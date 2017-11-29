@@ -410,7 +410,8 @@ input[type="search"],
 textarea {
   color: #666;
   border: 1px solid #ccc;
-  border-radius: 3px; }
+  border-radius: 3px;
+  background-color: #f4f4f4; }
   input[type="text"]:focus,
   input[type="email"]:focus,
   input[type="url"]:focus,
@@ -424,7 +425,8 @@ input[type="email"],
 input[type="url"],
 input[type="password"],
 input[type="search"] {
-  padding: 3px; }
+  padding: 3px;
+  background-color: #f4f4f4; }
 
 textarea {
   padding-left: 3px;
@@ -1018,6 +1020,14 @@ table {
   padding: 30px;
   font-family: Merriweather; }
 
+.tent-biz-hours-class {
+  line-height: 2.5; }
+  .tent-biz-hours-class span {
+    font-weight: bold; }
+
+.widget_archive {
+  line-height: 2.5; }
+
 .site-footer {
   background: url(../../images/dark-wood.png);
   background-size: 512px 512px;
@@ -1331,6 +1341,18 @@ table {
   font-weight: bold;
   text-transform: uppercase; }
 
+.page-id-25 .wpcf7-form p {
+  font-family: Novecento Sans Web, sans-serif;
+  text-transform: uppercase;
+  margin: 10px; }
+
+.page-id-25 .wpcf7-submit {
+  border: none;
+  color: white;
+  background-color: #248A83;
+  text-transform: uppercase;
+  font-family: Novecento Sans Web, sans-serif; }
+
 .search-field {
   display: none; }
 
@@ -1467,9 +1489,6 @@ table {
   -ms-flex-line-pack: justify;
       align-content: space-between; }
 
-.post-type-archive-product .entry-title::after {
-  border-bottom: 1px dotted black; }
-
 .tax-product-type .product-type-title {
   text-transform: uppercase;
   font-family: Novecento Sans Web, sans-serif;
@@ -1480,18 +1499,44 @@ table {
 
 .tax-product-type .taxonomy-description {
   font-family: Merriweather;
-  padding-bottom: 20px; }
+  padding-bottom: 20px;
+  text-align: center; }
 
 .tax-product-type .product-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 20px; }
+  grid-gap: 20px;
+  padding: 20px;
+  border-top: 1px solid #e1e1e1; }
+
+.tax-product-type .site-content {
+  width: 85%; }
+
+.tax-product-type .product-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: Merriweather;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+  border: 1px solid #e1e1e1;
+  border-top: 5px solid #e1e1e1; }
 
 .single-post .entry-footer {
   font-family: Novecento Sans Web, sans-serif;
   padding-top: 15px;
   padding-bottom: 15px;
   text-transform: uppercase; }
+
+.single-post .entry-title {
+  font-family: Novecento Sans Web, sans-serif; }
 
 .single-post .black-button {
   border: 1px solid #000;

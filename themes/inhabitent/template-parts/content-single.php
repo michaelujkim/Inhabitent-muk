@@ -32,9 +32,11 @@
 
 	<footer class="entry-footer">
 		<?php red_starter_entry_footer(); ?>
+		<p>
 		<button class="black-button"><i class="fa fa-facebook"></i>Like</button>
 		<button class="black-button"><i class="fa fa-twitter"></i>Tweet</button>
 		<button class="black-button"><i class="fa fa-pinterest"></i>Pin</button>	
+			</p>
 	</footer>
 	
 	

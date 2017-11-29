@@ -10,6 +10,7 @@
 .taxonomy-description{
   font-family: $main;
   padding-bottom:20px;
+  text-align:center;
 }
 
 .product-grid{
@@ -17,6 +18,27 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
   
   grid-gap: 20px;
+  padding:20px;
+  border-top:$dashed_border;
+}
+
+
+
+.site-content{
+  width:85%;
+}
+
+.product-info{
+  display:flex;
+  justify-content: space-between;
+  font-family:$main;
+  align-content:center;
+  align-items: center;
+  padding:10px;
+  border:$solid_border;
+  border-top: 5px solid #e1e1e1;
+  
+
 }
 
 

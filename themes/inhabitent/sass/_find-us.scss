@@ -17,4 +17,23 @@
       text-transform:uppercase;
     }
   }
+
+  .wpcf7-form{
+    p{
+      font-family:$accent;
+      text-transform:uppercase;
+      
+        margin:10px;
+       
+      
+    }
+  }
+  .wpcf7-submit{
+    border: none;
+    color: white;
+    background-color:$green;
+    text-transform:uppercase;
+    font-family:$accent;
+  }
+
 }
