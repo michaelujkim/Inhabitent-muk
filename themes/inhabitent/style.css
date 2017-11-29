@@ -1432,7 +1432,7 @@ table {
   font-family: Novecento Sans Web, sans-serif; }
 
 .post-type-archive-product .site-content {
-  width: 100%; }
+  width: 90%; }
 
 .post-type-archive-product .product-type-blocks-archive {
   color: #248A83;
@@ -1465,7 +1465,8 @@ table {
   border: 1px solid #e1e1e1;
   border-top: 5px solid #e1e1e1;
   position: absolute;
-  top: 100%; }
+  top: 100%;
+  width: 100%; }
 
 .post-type-archive-product .entry-header img {
   width: 300px;
@@ -1507,10 +1508,14 @@ table {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 20px;
   padding: 20px;
-  border-top: 1px solid #e1e1e1; }
+  border-top: 1px solid #e1e1e1;
+  height: 300px; }
+  .tax-product-type .product-grid img {
+    width: 300px;
+    height: 200px; }
 
 .tax-product-type .site-content {
-  width: 85%; }
+  width: 90%; }
 
 .tax-product-type .product-info {
   display: -webkit-box;

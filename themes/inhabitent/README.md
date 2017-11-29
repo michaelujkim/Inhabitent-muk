@@ -1,6 +1,46 @@
-# RED Starter
+# Project Title
 
-A WordPress starter theme for RED Academy students, forked from Underscores.
+"Inhabitent" Practice Wordpress site to reinforce the set up, use and customization of wordpress sites.
+
+## Getting Started
+
+First you must download and access the database provided. 
+
+### Prerequisites
+
+a web browser is required
+
+### Installing
+
+in the terminal, npm install in needed to run node packages
+
+
+
+
+## Deployment
+
+Add additional notes about how to deploy this on a live system
+
+## Built With
+
+Wordpress, VScode, MAMp
+
+
+
+
+
+## Authors
+
+Michael Kim
+
+
+
+
+## Acknowledgments
+
+* Thanks to all the instructors and students at RED 
+
+
 
 ## Installation
 
