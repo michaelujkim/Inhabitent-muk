@@ -113,7 +113,7 @@
 							 <div class="adventure-4"><h1>Star-gazing at the Night Sky</h1></div>
 
 							 </div>
-							 <h1> More Adventures</h1>
+							 <h1 class="more-adventures"> More Adventures</h1>
 
 
 		</main><!-- #main -->
