@@ -978,6 +978,9 @@ object {
 .header-logo {
   height: 50px; }
 
+.search-open {
+  background-color: transparent; }
+
 a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
   margin: 0;
   padding: 0;
@@ -1121,14 +1124,20 @@ table {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  max-width: 70%;
+  max-width: 85%;
   margin-right: auto;
   margin-left: auto; }
 
 .journal-entry-home {
   border: 1px solid #e1e1e1;
-  max-width: 23%;
-  height: 20vw; }
+  width: 31%;
+  height: 30vw; }
+  .journal-entry-home img {
+    width: 100%;
+    height: 250px;
+    display: block; }
+  .journal-entry-home p {
+    padding-top: 15px; }
 
 .home-journal-header {
   display: -webkit-box;
@@ -1152,18 +1161,22 @@ table {
   display: flex; }
 
 .read-more-button-home {
-  position: absolute;
+  position: relative;
   background-color: transparent;
   border: 1px solid #000;
   color: #000;
   text-decoration: none;
   font-family: Novecento, sans-serif;
-  padding: 10px;
+  padding: 15px;
   text-transform: uppercase;
-  margin: 10px; }
+  margin: 20px;
+  top: 20px; }
 
 .journal-entry-meta-home {
-  font-family: Merriweather; }
+  font-family: Merriweather;
+  padding-left: 15px;
+  font-size: 12px;
+  border-top: 5px solid #e1e1e1; }
 
 .journal-entry-title-home {
   font-family: Novecento, sans-serif;
@@ -1171,7 +1184,9 @@ table {
   text-transform: uppercase;
   color: #248A83;
   text-decoration: none;
-  font-weight: bold; }
+  font-weight: bold;
+  font-size: 20px;
+  padding-left: 15px; }
 
 .home-shop-header {
   display: -webkit-box;
@@ -1210,7 +1225,7 @@ table {
   width: 70px; }
 
 .product-type-blocks {
-  width: 70%;
+  width: 85%;
   margin-left: auto;
   margin-right: auto;
   display: -webkit-box;
@@ -1239,60 +1254,127 @@ table {
   width: 23%;
   font-family: Merriweather; }
   .product-type-block-wrapper p {
-    padding: 10px;
-    font-family: Merriweather; }
+    padding-top: 15px;
+    line-height: 1.5;
+    font-family: Merriweather;
+    padding-bottom: 15px;
+    text-align: center; }
     .product-type-block-wrapper p a {
       color: white;
       background-color: #248A83;
       margin-top: 2rem;
-      padding: 10px;
-      font-size: 1rem;
+      padding-top: 13px;
+      padding-bottom: 13px;
+      padding-left: 20px;
+      padding-right: 20px;
+      font-size: .9rem;
       font-family: Novecento, sans-serif;
       text-transform: uppercase; }
 
 .home-adventures {
   color: white;
-  font-size: 40px;
+  font-size: 45px;
   font-family: Merriweather;
-  text-shadow: 1px 1px 2px black;
-  max-width: 80%;
+  max-width: 78%;
   margin-left: auto;
   margin-right: auto;
   display: grid;
   grid-gap: 20px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr; }
+  .home-adventures .black-button {
+    position: relative;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    text-decoration: none;
+    font-family: Novecento, sans-serif;
+    padding: 15px;
+    text-transform: uppercase;
+    margin: 20px;
+    top: 8px;
+    font-size: 15px; }
   .home-adventures .adventure-1 {
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 3;
-    background: url(../../images/canoe-girl.jpg);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), #969696 url(../../images/canoe-girl.jpg) no-repeat top;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), #969696 url(../../images/canoe-girl.jpg) no-repeat top;
     height: 100%;
     background-size: cover; }
+    .home-adventures .adventure-1 h1 {
+      padding-left: 20px;
+      padding-right: 40px;
+      padding-top: 30px;
+      line-height: 1.5;
+      font-size: 45px; }
   .home-adventures .adventure-2 {
     grid-column-start: 3;
     grid-column-end: 5;
     grid-row-start: 1;
-    background: url(../../images/beach-bonfire.jpg);
-    height: 50vh;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), #969696 url(../../images/beach-bonfire.jpg) no-repeat top;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), #969696 url(../../images/beach-bonfire.jpg) no-repeat top;
+    height: 42vh;
     background-size: cover; }
+    .home-adventures .adventure-2 h1 {
+      padding-left: 20px;
+      padding-right: 40px;
+      padding-top: 30px;
+      line-height: 1.5;
+      font-size: 35px; }
+    .home-adventures .adventure-2 .black-button {
+      position: relative;
+      background-color: transparent;
+      border: 1px solid white;
+      color: white;
+      text-decoration: none;
+      font-family: Novecento, sans-serif;
+      padding: 15px;
+      text-transform: uppercase;
+      margin: 20px;
+      top: 0px; }
   .home-adventures .adventure-3 {
     grid-column-start: 3;
     grid-column-end: 4;
     grid-row-start: 2;
     grid-row-end: 3;
-    background: url(../../images/mountain-hikers.jpg);
-    height: 50vh;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), #969696 url(../../images/mountain-hikers.jpg) no-repeat top;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), #969696 url(../../images/mountain-hikers.jpg) no-repeat top;
+    height: 42vh;
     background-size: cover; }
+    .home-adventures .adventure-3 h1 {
+      padding-left: 20px;
+      padding-right: 40px;
+      padding-top: 30px;
+      line-height: 1.5;
+      font-size: 25px; }
+    .home-adventures .adventure-3 .black-button {
+      position: relative;
+      background-color: transparent;
+      border: 1px solid white;
+      color: white;
+      text-decoration: none;
+      font-family: Novecento, sans-serif;
+      padding: 15px;
+      text-transform: uppercase;
+      margin: 20px;
+      top: 0px; }
   .home-adventures .adventure-4 {
     grid-column-start: 4;
     grid-column-end: 5;
     grid-row-start: 2;
     grid-row-end: 3;
-    background: url(../../images/night-sky.jpg);
-    height: 50vh;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), #969696 url(../../images/night-sky.jpg) no-repeat top;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), #969696 url(../../images/night-sky.jpg) no-repeat top;
+    height: 42vh;
     background-size: cover; }
+    .home-adventures .adventure-4 h1 {
+      padding-left: 20px;
+      padding-right: 40px;
+      padding-top: 30px;
+      line-height: 1.5;
+      font-size: 25px; }
 
 .more-adventures {
   padding: 15px;
@@ -1302,7 +1384,7 @@ table {
   text-transform: uppercase;
   font-family: Novecento, sans-serif;
   width: 15%;
-  margin-left: 10%;
+  margin-left: 11%;
   margin-right: auto;
   margin-top: 10px;
   margin-bottom: 10px; }
@@ -1376,7 +1458,16 @@ table {
   font-family: Novecento, sans-serif; }
 
 .search-field {
-  display: none; }
+  display: none;
+  background-color: transparent; }
+
+.main-navigation input[type=search] {
+  background-color: transparent;
+  border: none;
+  font-family: Novecento, sans-serif;
+  position: relative;
+  top: 10px;
+  float: right; }
 
 .search-open,
 .no-js .search {

@@ -83,14 +83,14 @@
 
 <div class="home-journal">
 		<?php
-   $args = array( 'post_type' => 'post', 'order' => 'ASC','posts_per_page'   => 3 );
+   $args = array( 'post_type' => 'post', 'order' => 'DESC','posts_per_page'   => 3 );
    $product_posts = get_posts( $args ); 
 ?>
 <?php foreach ( $product_posts as $post ) : setup_postdata( $post ); ?>
 <div class="journal-entry-home">
 		<?php the_post_thumbnail( 'medium' );?>
-		<p><span class="journal-entry-meta-home">
-		<?php red_starter_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?> </span>
+		<p class="journal-entry-meta-home">
+		<?php red_starter_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?> </p>
 		<p class="journal-entry-title-home"><?php the_title();?></p>
 
 		<p><a href="<?php the_permalink(); ?>" class="read-more-button-home">read entry</a></p>
@@ -104,13 +104,16 @@
 </div>
 
 <div class="home-adventures">
-	<div class="adventure-1"><h1>Getting Back to Nature in a Canoe</h1>
+	<div class="adventure-1"><h1>Getting Back to Nature in a Canoe</h1><button class="black-button">Read More</button>
 							 </div>
 							 <div class="adventure-2">
 								 <h1>A Night with Friends at the Beach</h1>
+								 <button class="black-button">Read More</button>
 							 </div>
-							 <div class="adventure-3"><h1>Taking in the View at Big Mountain</h1></div>
-							 <div class="adventure-4"><h1>Star-gazing at the Night Sky</h1></div>
+							 <div class="adventure-3"><h1>Taking in the View at Big Mountain</h1>
+							 <button class="black-button">Read More</button></div>
+							 <div class="adventure-4"><h1>Star-gazing at the Night Sky</h1>
+							 <button class="black-button">Read More</button></div>
 
 							 </div>
 							 <h1 class="more-adventures"> More Adventures</h1>

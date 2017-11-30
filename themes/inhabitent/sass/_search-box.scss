@@ -3,23 +3,22 @@
 
 .search-field{
   display:none;
+  background-color:transparent;
 }
-input[type="search"].search-field {
-	
-}
-.search-form{
+.main-navigation{
+
+
+
+input[type=search]{
   
-    
   
+  background-color:transparent;
+  border:none;
+  font-family:$accent;
+  position: relative; top: 10px;
+  float:right;
 }
 
-.icon-search,
-.search-submit{
-
-}
-
-.search-submit{
-  
 }
 
 
@@ -27,6 +26,4 @@ input[type="search"].search-field {
 .no-js .search {
 	display:inline;
 }
-.icon-search {
 
-}

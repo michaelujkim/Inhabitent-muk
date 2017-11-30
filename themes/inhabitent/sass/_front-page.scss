@@ -15,7 +15,7 @@
 .home-journal{
   display:flex;
   justify-content:space-around;
-  max-width:70%;
+  max-width:85%;
   margin-right:auto;
   margin-left:auto;
 }
@@ -25,8 +25,17 @@
 
 .journal-entry-home{
   border:$solid_border;
-  max-width:23%;
-  height:20vw;
+  width:31%;
+  height:30vw;
+  img{
+    width:100%;
+    height:250px;
+    display:block;
+  }
+  p{
+    padding-top:15px;
+  }
+  
 }
 
 .home-journal-header{
@@ -46,21 +55,26 @@
 }
 
 .read-more-button-home{
-  position:absolute;
+  position:relative;
   background-color: transparent;
   border: 1px solid #000;
   color: #000;
   text-decoration:none;
   font-family:$accent;
-  padding:10px;
+  padding:15px;
   text-transform:uppercase;
-  margin:10px;
-
+  margin:20px;
+  top:20px;
+  
 
 }
 
 .journal-entry-meta-home{
   font-family: $main;
+  
+  padding-left:15px;
+  font-size:12px;
+  border-top: 5px solid #e1e1e1;
 
 }
 .journal-entry-title-home{
@@ -70,6 +84,8 @@
   color: $green;
   text-decoration: none;
   font-weight: bold;
+  font-size:20px;
+  padding-left:15px;
 
 }
 
@@ -101,7 +117,7 @@
 }
 
 .product-type-blocks{
-  width:70%;
+  width:85%;
   margin-left:auto;
   margin-right:auto;
   display:flex;
@@ -119,16 +135,22 @@
   width:23%;
   font-family: $main;
    p {
-     padding:10px;
+     padding-top:15px;
+     line-height:1.5;
      font-family:$main;
+     padding-bottom:15px;
+     text-align:center;
 
 
      a{
        color:white;
       background-color: $green;
      margin-top:2rem;
-    padding:10px;
-    font-size:1rem;
+    padding-top:13px;
+    padding-bottom:13px;
+    padding-left:20px;
+    padding-right:20px;
+    font-size:.9rem;
     font-family:$accent;
     text-transform:uppercase;
      }
@@ -138,57 +160,121 @@
 
 .home-adventures{
   color:white;
-  font-size:40px;
+  font-size:45px;
   font-family:$main;
-  text-shadow:1px 1px 2px black;
+  
 
-  max-width:80%;
+  max-width:78%;
   margin-left:auto;
   margin-right:auto;
   display:grid;
   grid-gap:20px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
+  .black-button{
+    position:relative;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    text-decoration:none;
+    font-family:$accent;
+    padding:15px;
+    text-transform:uppercase;
+    margin:20px;
+    top:8px;
+    font-size:15px;
+  }
   .adventure-1{
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 3;
-    background:url(../../images/canoe-girl.jpg);
+    background:linear-gradient(180deg,rgba(0,0,0,.4) 0,rgba(0,0,0,.4)),#969696 url(../../images/canoe-girl.jpg) no-repeat top;
     height:100%;
     
     background-size: cover;
-    
+    h1{
+      padding-left:20px;
+      padding-right:40px;
+      padding-top:30px;
+      line-height:1.5;
+      font-size:45px;
+    }
   }
   .adventure-2{
     grid-column-start: 3;
     grid-column-end: 5;
     grid-row-start: 1;
+    background:linear-gradient(180deg,rgba(0,0,0,.4) 0,rgba(0,0,0,.4)),#969696 url(../../images/beach-bonfire.jpg) no-repeat top;
     
-    background:url(../../images/beach-bonfire.jpg);
-    height:50vh;
+    height:42vh;
     
     background-size: cover;
+    h1{
+      padding-left:20px;
+      padding-right:40px;
+      padding-top:30px;
+      line-height:1.5;
+      font-size:35px;
+    }
+    .black-button{
+      position:relative;
+      background-color: transparent;
+      border: 1px solid white;
+      color: white;
+      text-decoration:none;
+      font-family:$accent;
+      padding:15px;
+      text-transform:uppercase;
+      margin:20px;
+      top:0px;
+    }
   }
   .adventure-3{
     grid-column-start: 3;
     grid-column-end: 4;
     grid-row-start: 2;
     grid-row-end: 3;
-    background:url(../../images/mountain-hikers.jpg);
-    height:50vh;
+    background:linear-gradient(180deg,rgba(0,0,0,.4) 0,rgba(0,0,0,.4)),#969696 url(../../images/mountain-hikers.jpg) no-repeat top;
+    height:42vh;
     
     background-size: cover;
+    h1{
+      padding-left:20px;
+      padding-right:40px;
+      padding-top:30px;
+      line-height:1.5;
+      font-size:25px;
+    }
+    .black-button{
+      position:relative;
+      background-color: transparent;
+      border: 1px solid white;
+      color: white;
+      text-decoration:none;
+      font-family:$accent;
+      padding:15px;
+      text-transform:uppercase;
+      margin:20px;
+      top:0px;
+    }
   }
   .adventure-4{
     grid-column-start: 4;
     grid-column-end: 5;
     grid-row-start: 2;
     grid-row-end: 3;
-    background:url(../../images/night-sky.jpg);
-    height:50vh;
+    background:linear-gradient(180deg,rgba(0,0,0,.4) 0,rgba(0,0,0,.4)),#969696 url(../../images/night-sky.jpg) no-repeat top;
+    height:42vh;
     
     background-size: cover;
+    h1{
+      padding-left:20px;
+      padding-right:40px;
+      padding-top:30px;
+      line-height:1.5;
+      font-size:25px;
+    }
   }
 
 
@@ -201,7 +287,7 @@
  text-transform:uppercase;
  font-family:$accent;
  width:15%;
- margin-left:10%;
+ margin-left:11%;
  margin-right:auto;
  margin-top:10px;
  margin-bottom:10px;
