@@ -1458,7 +1458,7 @@ table {
   font-family: Novecento, sans-serif; }
 
 .search-field {
-  display: none;
+  width: 0px;
   background-color: transparent; }
 
 .main-navigation input[type=search] {
@@ -1471,7 +1471,7 @@ table {
 
 .search-open,
 .no-js .search {
-  display: inline; }
+  width: 200px; }
 
 .search-results .page-title {
   text-transform: uppercase;

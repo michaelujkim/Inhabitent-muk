@@ -2,8 +2,9 @@
 
 
 .search-field{
-  display:none;
+  width:0px;
   background-color:transparent;
+  
 }
 .main-navigation{
 
@@ -24,6 +25,7 @@ input[type=search]{
 
 .search-open,
 .no-js .search {
-	display:inline;
+  width:200px;
+  
 }
 

@@ -3,18 +3,18 @@
   $('.icon-search').on('click', function (e) {
     e.preventDefault();
 
-    $('.search-field').toggleClass('search-open').focus();
+    $('.search-field').animate(
+      {width:200},"slow").focus()
 
-    // $(document).click(function (e) {
-    //   if (!$(e.target).closest('.search-form').length) {
-    //     $('.search-field').removeClass('search-open');
-    //   }
-    // });
+
+    
 
   });
 
   $('.search-field').on('blur', function(){
-    $(this).toggleClass('search-open')
+    $('.search-field').animate(
+      {width:0},"slow")
+
   });
 
 })(jQuery);
